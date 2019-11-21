@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+	<title>Login de Usuario</title>
+</head>
+<body>
+	
+	<div class="contenedor">
+		<div class="mascara" id="mascara">
+			
+			<div class="form">
+				<input type="text" name="nick" />
+				<a href="#" id="next" class="button">Siguiente</a>
+			</div>
+
+			<div class="form">
+				<input type="password" name="password" />
+				<a href="#" class="button intro">Iniciar session</a>
+				<a href="#" class="button intro" id="prev">Usar otra Cuenta</a>
+			</div>
+			
+		</div>
+	</div>
+
+<script type="text/javascript" src="script/libreria.js">
+</script>
+
+<script type="text/javascript">
+	
+	Obj("#next",()=>{
+		Obj("#mascara").classList.add("next");
+	});
+
+	Obj("#prev",()=>{
+		Obj("#mascara").classList.remove("next");
+	});
+
+</script>
+</body>
+</html>
